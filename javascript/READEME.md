@@ -35,3 +35,45 @@ Use a lot of:
 - **immutable**: unchanging over time
 - if something has to change for your data structures, copy function then make changes
 
+## Unit Testing & Test Driven Development (Udemy Unit Testing and Test Driven Development in NodeJS)
+### Why?
+- Bugs hurt business
+- Testing catches bugs before going to production
+### Levels
+- unit - function level (most comprehensive)
+- component - library and compiled binary
+- system - external intefaces of a system and it's sub-systems
+- performance - sub-system and system to verify loading
+### Unit Testing
+- Safety net
+- Tests individual functions - one for each function
+- Positive/negative testing
+- Executes in development environment
+- Should be automated
+- In unit test: describe test, have a setup, an action, and an assertion where it validates
+### Test Driven Development (TDD)
+- Process where developers take responsibility for quality of code
+- Unit tests to be written before production code
+- Shouldn't write all tests or production code at once
+- Tests and production code are both written together in small bits of functionality
+- Short cycle
+- Immediate feedback
+- Documents what code is doing
+- Drives good object oriented design
+- Tests should begin at the most simple of tests to more complicated
+#### Work Flow
+- Write a failing unit test (RED phase)
+- Write basic production code to make test pass (GREEN phase) (update red phase to become green phase, not separate tests)
+- Refactor unit test/production code to make it clean (REFACTOR phase)
+- Repeat
+#### Laws of TDD
+- Don't write any production code until you have written a failing unit test
+- Don't write more of a unit test than is sufficient to fail, and not compiling is failing
+- Don't write more production code than is sufficient to pass the currently failing unit test
+#### Example of tests descriptions
+- Can I call function
+- Get "1" when I pass in 1
+- Get "2" when I pass in 2
+- Get "Fizz" when I pass in 3
+- Get "Buzz" when I pass in 5
+- Get "FizzBuzz" when I pass in 15 or a multiple of 3
